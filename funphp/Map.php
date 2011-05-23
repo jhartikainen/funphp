@@ -1,5 +1,6 @@
 <?php
 namespace funphp;
+require_once 'funphp/arrayify.php';
 
 /**
  * map implementation compatible with collections
@@ -8,9 +9,5 @@ namespace funphp;
  * @return mixed
  */
 function map($list, $func) {
-    if(!is_array($list)) {
-	$list = iterator_to_array($list);
-    }
-
-    return array_map($func, $list);
+    return array_map($func, arrayify($list));
 }
