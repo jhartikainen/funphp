@@ -1,5 +1,5 @@
 <?php
-require_once 'funphp/Map.php';
+require_once 'funphp/map.php';
 require_once 'funphp/filter.php';
 use funphp as f;
 
